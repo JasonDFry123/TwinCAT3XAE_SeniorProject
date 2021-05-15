@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+  <GVL Name="Controls_GVL" Id="{5827a970-329c-4d9d-b3f4-6758c0dcaee7}">
+    <Declaration><![CDATA[VAR_GLOBAL
+	Light			AT %Q*	:BOOL;		//Digital Input on Ek1914 card 1. 'AT %I' shows it is an hardware input, ':BOOL;' declares the type, in this case, it's a Boolean. 
+	ManualMo        AT %Q*  :BOOL;
+	RotateRight 	AT %Q*  :BOOL;
+	RRInp 			AT %I*  :BOOL;
+	RotateLeft 		AT %Q*  :BOOL;
+	RLInp			AT %I*  :BOOL;
+	Reset           AT %I* 	:BOOL;
+	Estop  			AT %I* 	:BOOL;
+	ManualIn 		AT %I*  :BOOL;
+	BendDown		AT %I*  :BOOL;
+	StandUp			AT %I*  :BOOL;
+	CloseGripp		AT %I*  :BOOL;
+	BDout			AT %Q*  :BOOL;
+	SUout			AT %Q*  :BOOL;
+	CGout			AT %Q*  :BOOL;
+	EstopOut		AT %Q*  :BOOL;
+	IRSensor		AT %I*  :BOOL;
+	plctonc			AT %Q*  :PLCTONC_AXLESTRUCT_CTRL;
+	nctoplc 		AT %I*  :NCTOPLC_AXLESTRUCT_STATE;
+	Position: INT;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+  <GVL Name="GVL_Sensors" Id="{06d2cfb4-faea-47f7-8719-fc045936fbbb}">
+    <Declaration><![CDATA[VAR_GLOBAL
+	XAxisLimitSwPos AT %I* :BOOL;
+	XAxisLimitSwNeg AT %I* :BOOL;
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+  <GVL Name="GVL_NC" Id="{40f5b3c6-80b4-4164-825f-9d569ac68436}">
+    <Declaration><![CDATA[VAR_GLOBAL
+	AxisX:AXIS_REF;
+	AxisXStatus:ST_AxisStatus;
+	
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>

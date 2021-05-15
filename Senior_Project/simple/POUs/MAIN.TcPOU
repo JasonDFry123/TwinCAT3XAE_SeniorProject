@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+  <POU Name="MAIN" Id="{eaaaa866-ff64-4f1f-a8a1-5273cc9f3e0d}" SpecialFunc="None">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+	Ladder : POU_MainFunc;
+	Motor: POU_NCPowerOn;
+	ReadXAxisStatus:MC_ReadStatus;
+	poweraxis: MC_PowerStepper;
+	resetaxis: MC_Reset;
+	stopaxis: MC_Stop;
+	MoveVelocity: MC_MoveVelocity;
+	direction: MC_Direction;
+	SetVel: MC_MoveAbsolute;
+	
+	
+END_VAR]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[
+	
+	
+Ladder();
+motor();	]]></ST>
+    </Implementation>
+    <LineIds Name="MAIN">
+      <LineId Id="5" Count="0" />
+      <LineId Id="124" Count="0" />
+      <LineId Id="91" Count="2" />
+    </LineIds>
+  </POU>
+</TcPlcObject>

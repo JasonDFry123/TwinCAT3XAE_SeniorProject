@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.4024.2">
+  <GVL Name="GVL_axisContr" Id="{ca756a2c-c8a6-46eb-85ff-6e715447bb99}">
+    <Declaration><![CDATA[VAR_GLOBAL
+	XAxisEnable:BOOL;
+	XAxisJogPos:BOOL;
+	XAxisJogNeg:BOOL;
+	
+END_VAR]]></Declaration>
+  </GVL>
+</TcPlcObject>
